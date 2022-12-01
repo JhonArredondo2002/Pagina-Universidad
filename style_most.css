@@ -1,0 +1,23 @@
+.cont
+{
+    margin: 6em auto;
+    padding-left: 20px;
+    font-size: 14px;
+}
+table tr td, th
+{
+    padding: 10px 3px;
+    border: solid 1px black;
+}
+td{
+    text-align: center;
+    color: white;
+}
+td:hover
+{
+    background-color: #646363;
+}
+table
+{
+    box-shadow: 2px 5px 8px 2px #888888;
+}

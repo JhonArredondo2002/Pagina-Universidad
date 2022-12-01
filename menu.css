@@ -1,0 +1,197 @@
+/*Declaracion de Variables*/
+:root{
+    --width:200px;
+    --padding:10px;
+    --bgcolor:white;        /*Variables Globales*/
+    --textcolor:rgb(145, 12, 12);
+    --hovercolor:rgb(91, 91, 245);
+    --width-collapsed:50px;
+}
+
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-left: var(--width-collapsed); /*Se da una separacion para que el contenido no sea opacado por el menu*/
+}
+
+/*Clase para cambiar la separacion al expander el menu*/
+.body_expanded{
+    margin-left: var(--width);
+}
+
+/*Apariencia general del menu*/
+#sidemenu{
+    background-color: var(--bgcolor);
+    color: black;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-right: solid 2px var(--hovercolor);
+}
+
+#sidemenu a{
+    color: black;
+    text-decoration: none;
+}
+
+/*header*/
+
+/*Titulo y logo del menu*/
+#sidemenu #header{
+    box-sizing: border-box;     /*Calcular mejor el tamaño del elemento*/
+    border-bottom: solid 2px var(--hovercolor); /*Linea en la parte de abajo del elemnto */
+}
+
+#sidemenu #header #title{
+    box-sizing: border-box;
+    overflow: hidden;       /*Si el contenido es superior al contenedor, oculta el contenido sobrante*/
+}
+
+#sidemenu #header #title, #sidemenu #header #menu-btn{
+    vertical-align: middle;      /*Alinea los elemento verticalmente*/
+}
+
+#sidemenu #header #menu-btn{
+    display: inline-block;      /*Permite posisionar elemnto uno al lado del otro respetando su tamaño*/
+    cursor: pointer;        /*Apariencia del cursor*/
+    padding: 10px;
+    width: var(--width-collapsed);
+    box-sizing: border-box;
+}
+
+#sidemenu #header #menu-btn .btn-hamburguer{
+    background-color: var(--hovercolor);
+    width: 100%;
+    height: 2px;
+    margin:5px 0;
+}
+
+
+/*Perfil de la empresa */
+#sidemenu #profile{
+    border-bottom: solid 2px var(--hovercolor);
+    padding: var(--padding)0;
+    text-align: center;
+}
+
+#sidemenu #profile #photo{
+    box-sizing: border-box;
+    padding: var(--padding);
+    margin: 0 auto;
+}
+
+#sidemenu #profile #photo img{
+
+    width: 90%;
+}
+
+#sidemenu #profile #photo, #sidemenu #profile #name{
+    font-size: 24px;
+    padding: var(--padding)0;
+    overflow: hidden;
+}
+
+/*Items*/
+#sidemenu #menu_itmes{
+    overflow: hidden;
+}
+
+#sidemenu #menu_itmes .item{
+    width: var(--width);
+}
+
+#sidemenu #menu_itmes .item .icon{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: var(--padding);
+    width: var(--width-collapsed);
+}
+
+#sidemenu #menu_itmes .item .icon, #sidemenu #menu_itmes .item .title{
+    font-size: 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}
+#sidemenu #menu_itmes .item a{
+    display: block;
+}
+
+#sidemenu #menu_itmes .item a:hover{
+    background-color: var(--hovercolor);
+}
+
+#sidemenu #menu_itmes .item .icon img{
+    width: 100%;
+}
+
+#sidemenu #menu_itmes .item .title{
+    padding: var(--padding)0;
+}
+
+#sidemenu #menu_itmes .separator {
+    height: 1px;
+    border-bottom: solid 2px var(--hovercolor);
+    margin: 0;
+}
+
+/*Propiedades para expandir el menu*/
+.menu_expanded{
+    width: var(--width);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu_expanded #header #title{
+    display: inline-block;
+    width:calc(100% - 50px);
+    margin-right: -5px;
+    padding: var(--padding);
+}
+
+.menu_expanded #header #title span{
+    width:calc(var(--width) - var(--width-collapsed) -5px);
+    overflow: hidden;
+}
+
+.menu_expanded #profile #photo{
+    width: 200px;
+}
+
+.menu_expanded #profile #name{
+    width: 100%;
+}
+
+/*Propiedades al contraer el menu*/
+.menu-collapsed{
+    width:var(--width-collapsed);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-collapsed #header #title{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-collapsed #profile #name{
+    display: none;
+}
+
+.menu-collapsed .item{
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+ 

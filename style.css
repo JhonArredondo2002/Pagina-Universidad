@@ -1,0 +1,111 @@
+.enlaces, .form_stu1, .form_stu2
+{
+    border: 1px solid rgb(145, 12, 12);
+    width: 95%;
+    box-shadow: 2px 5px 8px 2px #888888;
+}
+.enlaces
+{
+    margin: 1em auto;
+}
+.form_stu1
+{
+    margin: 4em auto;
+}
+
+.form_stu2
+{
+    margin: 4em auto;
+}
+
+.Estudiantes, .Facult{
+    /*background:-webkit-linear-gradient(top,#585858,#FFFFFF);*/
+    font-size: 10px;
+    padding: 1em 1em;
+    width: 35%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 2px 5px 8px 2px #888888;
+    opacity: 1;
+    white-space: nowrap;
+    color: white;
+}
+.Estudiantes{
+    margin:4em auto;
+    margin-left:150px;
+    background-color: rgb(145, 12, 12);
+}
+.Facult{
+    margin-top:4em;
+    margin-bottom: 4em;
+    margin-left: 1em;
+    margin-right: auto;
+    clear: both;
+    background-color: rgb(91, 91, 245);
+}
+.Estudiantes:hover, .Facult:hover
+{
+    background-color: #646363;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+form
+{
+    margin: auto;
+    padding: 1em;
+    
+}
+.form_stu1
+{
+    width: 90%;
+    justify-content: baseline;
+}
+.form_stu2
+{
+    width: 70%;
+    justify-content: baseline;
+}
+input, select
+{
+    border: solid 1px rgb(133, 133, 133);
+    border-radius: 5px;
+    padding: 3px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+    
+}
+input, select, label
+{
+    margin-left: 5px;
+}
+table tr td
+{
+    padding: 7px;
+}
+.btn1, .btn2
+{
+    padding: 7px;
+    color: aliceblue;
+}
+.btn1
+{
+    background:rgb(91, 91, 245);
+}
+.btn2
+{
+    background:rgb(145, 12, 12);
+}
+.btn1:hover, .btn2:hover
+{
+    background-color: #646363;
+    
+}
+h1
+{
+    margin-left:30px ;
+}
